@@ -50,8 +50,7 @@ calculo.addEventListener('click', function (event) {
         let ocultarSeccion = document.getElementById("section_datos")
         ocultarSeccion.style.display = "none";
 
-        let mostrarSeccion = document.getElementById("resultado")
-        mostrarSeccion.style.display = "flex";
+        mostrarSeccion.style.display = "flex"
 
 
 
@@ -68,11 +67,7 @@ calculo.addEventListener('click', function (event) {
 
     }
 
-    function elegir(lado){
     
-       let lado
-
-    }
 
 
     function calcularPVC(calcularMc, per) {
