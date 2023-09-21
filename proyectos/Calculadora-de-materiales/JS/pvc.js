@@ -129,7 +129,7 @@ calculo.addEventListener('click', function (event) {
 
 
 
-
+/*
 
 
 
@@ -226,4 +226,4 @@ document.getElementById("generatePdf").addEventListener("click", () => {
 
   // Guardar el PDF
   pdf.save(`factura_${numeroFactura}.pdf`);
-});
+}); */
