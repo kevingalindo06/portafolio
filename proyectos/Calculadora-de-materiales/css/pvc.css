@@ -182,14 +182,14 @@ p {
 
 }
 
-#container1,
-#container2 {
+#fila{
     display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .tarjetas {
     display: flex;
-    flex-direction: column;
     margin-top: 20px;
     margin-right: 20px;
     justify-content: center;

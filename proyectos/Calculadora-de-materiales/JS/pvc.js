@@ -1,12 +1,12 @@
 
-
-// Importar la librería jsPDF
-const { jsPDF } = window.jspdf;
-
-
-
 let mostrarSeccion = document.getElementById("resultado")
 mostrarSeccion.style.display = "none";
+
+
+
+
+
+
 
 
 
@@ -68,6 +68,12 @@ calculo.addEventListener('click', function (event) {
 
     }
 
+    function elegir(lado){
+    
+       let lado
+
+    }
+
 
     function calcularPVC(calcularMc, per) {
 
@@ -78,6 +84,7 @@ calculo.addEventListener('click', function (event) {
         let tarjeta_tornillosP = document.getElementById("tornillo_p")
         let tarjeta_tornillosG = document.getElementById("tornillo_g")
         let tarjeta_Angulos = document.getElementById("angulos")
+
 
 
         const laminas_sin = 1.785;
@@ -127,6 +134,8 @@ calculo.addEventListener('click', function (event) {
 
 
 
+// Importar la librería jsPDF
+const { jsPDF } = window.jspdf;
 
 
 
