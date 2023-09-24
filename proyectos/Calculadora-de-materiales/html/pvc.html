@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/pvc.css">
 
-   
+
 
     <title> PVC </title>
 
@@ -20,10 +20,11 @@
             <h2>calculadora de materiales - pvc</h2>
         </div>
 
-        <input type="checkbox" name="" id="tucheck" >
-        <label for="tucheck" class="mostrar-menu">            
-            <img class="menu-responsive" id="menu-responsive" src="../imagenes/menu_icon.png" alt="menu" style="width: 36px; height: 21px;"></label>
-        
+        <input type="checkbox" name="" id="tucheck">
+        <label for="tucheck" class="mostrar-menu">
+            <img class="menu-responsive" id="menu-responsive" src="../imagenes/menu_icon.png" alt="menu"
+                style="width: 36px; height: 21px;"></label>
+
 
         <nav id="barra_de_navegacion " class="menu">
 
@@ -37,17 +38,17 @@
                 <li class="bar_nav"> <a href="../html/estructura.html">Estructura</a> </li>
                 <li class="bar_nav"> <a href="../html/contacto.html">Contacto</a> </li>
 
-                <label for="tucheck" class="esconder-menu" >            
-                    &#215</label> 
+                <label for="tucheck" class="esconder-menu">
+                    &#215</label>
             </ul>
 
-            <label for="tucheck" class="esconder-menu">            
-                &#215</label>   
+            <label for="tucheck" class="esconder-menu">
+                &#215</label>
 
         </nav>
 
 
-       
+
 
 
     </header>
@@ -81,74 +82,243 @@
                     title="Escribe aqui el segundo dato para calcular los metros cuadrados" type="number" required>
 
 
-                <a id="enviar" title=" Da click para calcular" href="">Calcular</a>
+                <input type="button" value="Calcular" id="enviar" title=" Da click para calcular">
+
+
             </div>
 
         </div>
 
     </section>
 
-    <section id="resultado">
+    <section id="opciones">
+
+        <div id="container_op">
+
+            <h2>¿como quiere hacer su cotizacion?</h2>
+
+            <h3>elija una de las opciones:</h3>
+
+
+            <input type="checkbox" name="" id="opcion1" onclick="showContent()">
+            <label for="opcion1">
+
+                <p href="#" class="eleccion">por metros cuadrados: <span id="opcion1"></span></p>
+            </label>
+
+            <section id="resultado1">
+
+
+                <p>resultado 1</p>
+
+
+                <p>Tienes: <span id="mc"> </span> metros cuadrados</p> <br><br>
+
+                <div id="informacion">
+
+                    <div id="fila">
+
+                        <div class="tarjetas" id="laminas">
+                            <p>Necesitas: <br> <br> <span id="l_pvc"> tantas</span> laminas de pvc</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="omegas">tantas </span> omegas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="viguetas">tantas </span> viguetas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_p">tantos t </span> tornillos de Estructura</p>
+                            <br><br>
+                        </div>
+
+                    </div>
+                    <div id="fila">
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_g">tantos </span> tornillos cabeza de lenteja</p>
+                            <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="Perimetrales">tantos </span> perimetrales</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="angulos">tantos </span> angulos</p> <br><br>
+                        </div>
+
+                    </div>
 
 
 
-        <p>Tienes: <span id="mc"> </span> metros cuadrados</p> <br><br>
 
-        <div id="informacion">
 
-            <div id="fila">
 
-                <div class="tarjetas" id="laminas">
-                    <p>Necesitas: <br> <br> <span id="l_pvc"> tantas</span> laminas de pvc</p> <br><br>
+
+
+
+
                 </div>
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="omegas">tantas </span> omegas</p> <br><br>
+
+                <!--<br> <br> <br> <a href="" id="generatePdf"> generar nuevo Pdf </a> -->
+
+
+            </section>
+
+
+
+
+            <input type="checkbox" name="" id="opcion2" onclick="showContent()">
+            <label for="opcion2">
+
+                <p href="#" class="eleccion">por el lado mas grande: <span id="l_grande"></span></p>
+            </label>
+
+            <section id="resultado2">
+
+
+                <p>resultado 2</p>
+
+
+                <p>Tienes: <span id="mc_2"> </span> metros cuadrados</p> <br><br>
+
+                <div id="informacion">
+
+                    <div id="fila">
+
+                        <div class="tarjetas" id="laminas_2">
+                            <p>Necesitas: <br> <br> <span id="l_pvc_2"> tantas</span> laminas de pvc</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="omegas_2">tantas </span> omegas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="viguetas_2">tantas </span> viguetas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_p_2">tantos t </span> tornillos de Estructura</p>
+                            <br><br>
+                        </div>
+
+                    </div>
+                    <div id="fila">
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_g_2">tantos </span> tornillos cabeza de lenteja
+                            </p>
+                            <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="Perimetrales_2">tantos </span> perimetrales</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="angulos_2">tantos </span> angulos</p> <br><br>
+                        </div>
+
+                        <p> el desperdicio es de: <span id="desperdicio"></span></p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
                 </div>
 
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="viguetas">tantas </span> viguetas</p> <br><br>
+                <!--<br> <br> <br> <a href="" id="generatePdf"> generar nuevo Pdf </a> -->
+
+
+            </section>
+
+            <input type="checkbox" name="" id="opcion3" onclick="showContent()">
+            <label for="opcion3">
+
+                <p href="#" class="eleccion">por el lado mas corto:<span id="l_corto"></span></p>
+            </label>
+
+            <section id="resultado3">
+
+
+                <p>resultado 3</p>
+
+
+                <p>Tienes: <span id="mc_3"> </span> metros cuadrados</p> <br><br>
+
+                <div id="informacion">
+
+                    <div id="fila">
+
+                        <div class="tarjetas" id="laminas_3">
+                            <p>Necesitas: <br> <br> <span id="l_pvc_3"> tantas</span> laminas de pvc</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="omegas_3">tantas </span> omegas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="viguetas_3">tantas </span> viguetas</p> <br><br>
+                        </div>
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_p_3">tantos t </span> tornillos de Estructura</p>
+                            <br><br>
+                        </div>
+
+                    </div>
+                    <div id="fila">
+
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="tornillo_g_3">tantos </span> tornillos cabeza de lenteja
+                            </p>
+                            <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="Perimetrales_3">tantos </span> perimetrales</p> <br><br>
+                        </div>
+                        <div class="tarjetas">
+                            <p>Necesitas: <br> <br> <span id="angulos_3">tantos </span> angulos</p> <br><br>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
                 </div>
 
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="tornillo_p">tantos t </span> tornillos pequeños</p> <br><br>
-                </div>
-
-            </div>
-            <div id="fila">
-
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="tornillo_g">tantos </span> tornillos grandes</p> <br><br>
-                </div>
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="Perimetrales">tantos </span> perimetrales</p> <br><br>
-                </div>
-                <div class="tarjetas">
-                    <p>Necesitas: <br> <br> <span id="angulos">tantos </span> angulos</p> <br><br>
-                </div>
-
-            </div>
+                <!--<br> <br> <br> <a href="" id="generatePdf"> generar nuevo Pdf </a> -->
 
 
-
-
-
-
+            </section>
 
 
 
 
         </div>
 
-        <br> <br> <br> <a href="" id="generatePdf"> generar nuevo Pdf </a>
-
-
     </section>
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    
+
+
+
+
     <script src="../JS/pvc.js"></script>
 
 
