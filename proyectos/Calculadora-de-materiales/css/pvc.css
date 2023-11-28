@@ -5,510 +5,55 @@ body {
 
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #1A1823;
-    width: 200px;
-    position: fixed;
-
-}
-
-nav ul {
-    margin-top: 70px;
-}
-
-
-
-
-
-
-.bar_nav {
-    list-style: none;
-    font-size: 20px;
-    margin-bottom: 60px;
-    transition: transform .8s;
-
-}
-
-.bar_nav:hover {
-
-    transform: scale(1.5);
-
-
-}
-
-.bar_nav a {
-    text-decoration: none;
-    color: #ffffff;
-
-
-
-}
-
-.bar_nav a:hover {
-    text-decoration: underline white;
-    color: #02cd9a;
-
-
-
-}
-
-
-
-.mostrar-menu,
-.esconder-menu {
-
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    transition: 0.4s;
-
-
-}
-
-.mostrar-menu {
-    order: 1;
-}
-
-.menu a:hover,
-.mostrar-menu:hover .esconder-menu:hover {
-
-    color: #6cc091;
-
-
-}
-
-#tucheck {
-    display: none;
-}
-
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo {
-    display: flex;
-    color: #ffffff;
-    background-color: #13111c;
-    margin-left: 440px;
-    font-size: large;
+.titulo{
+    text-align: center;
+    color:#fff;
     text-transform: uppercase;
-    position: fixed;
-
-
 }
 
+.contenedor{
 
-
-
-#container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 90px;
-    margin-left: 58px;
-
-
-}
-
-
-#datos {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-p {
-    color: #ffffff;
-}
-
-.inputs {
-    background-color: #1A1823;
-    color: white;
-    border: 0px;
-    border-radius: 3px;
-    height: 40px;
-    width: 300px;
-    margin-bottom: 40px;
-    transition: transform .7s;
-}
-
-.inputs:hover {
-    transform: scale(1.2);
-}
-
-#enviar {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    background-color: #02cd9a;
-    color: #ffffff;
-    border-radius: 15px;
-    border: none;
-    text-decoration: none;
+    display:flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-}
-
-#enviar:hover {
-    background-color: #63f8d3;
-}
-
-#opciones{
-    display: none;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     flex-direction: column;
-    
-
-}
-
-#container_op {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 90px;
-    margin-left: 58px;
-    color: white;
-    margin-bottom: 50px;
-
-}
-
-#container_op #opcion1, #opcion2, #opcion3{
-    display: none;
-    
-    
-}
-
-
-
-#container_op label{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    height: 45px;
-    width:300px;
-   background-color: #02cd9a;
-   border-radius: 15px;
-   cursor: pointer;
-
-   
- 
-}
-
-#container_op label p{ 
     color: #fff;
-    font-size: 20px;
-   
-   
+    
+    
 }
 
-
-
-#resultado1, #resultado2, #resultado3{
-    display: none;
-    justify-content: center;
-    align-items: center;
+.contenedor form{
+    display: flex;
     flex-direction: column;
-    margin-top: 65px;
-    margin-bottom: 50px;
-    transition: 0.5;
-}
-
-
-
-
-#informacion {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-bottom: 150px;
 
 }
 
-#fila{
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: center;
-}
-
-.tarjetas {
-    display: flex;
-    margin-top: 20px;
-    margin-right: 20px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid #fff;
-    border-radius: 15px;
-    box-shadow: 10px 5px 5px black;
-    width: 180px;
-    height: 200px;
-    transition: transform .7s;
-
-}
-
-.tarjetas:hover {
-    background-color: #403e4d;
-    transform: scale(1.5);
-}
-
-#generatePdf {
-
-    display: flex;
-    width: 150px;
+.entradas{
+    margin-bottom: 30px;
+    width: 400px;
     height: 40px;
+    background-color: #13111c;
+    border: 1px solid white;
+}
+
+.Calcular{
+    width: 200px;
+    height: 35px; 
     background-color: #02cd9a;
-    color: #ffffff;
-    border-radius: 15px;
     border: none;
+    color: #fff;
+
+}
+
+.regresar{
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-
-/* Estilos para filas impares */
-.fila-impar {
-    background-color: #aff7f4;
-    /* Color de fondo para filas impares */
-}
-
-/* Estilos para filas pares */
-.fila-par {
-    background-color: #fff;
-    /* Color de fondo para filas pares */
-}
-
-
-
-/*mediaQueries*/
-
-
-
-@media(max-width:1000px) {
-
-
-
-    #container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 90px;
-        margin-left: 150px;
-
-
-    }
-
-    .titulo {
-        display: flex;
-
-        color: #ffffff;
-        background-color: #13111c;
-        margin-left: 300px;
-        font-size: large;
-        text-transform: uppercase;
-        position: fixed;
-
-
-    }
-
-    .mostrar-menu {
-
-        display: flex;
-        margin-top: 10px;
-       margin-left: 10px;
-
-
-    }
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background:#403e4d;
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 0px;
-        z-index: 100;
-        transition: 0.9s;
-    }
-
-   
-
-    .esconder-menu {
-        display: flex;
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-
-    #tucheck:checked~.menu {
-        display: flex;
-
-        right: 0;
-
-
-
-    }
-
-
-
+    padding: 10px 75px;
+    color: #fff;
+    background-color: #02cd9a;
+    margin-left: 20px;
+    
 
 }
-
-
-
-
-    @media(max-width:800px) {
-
-        nav {
-            display: none;
-
-        }
-
-        .titulo {
-            display: flex;
-
-            color: #ffffff;
-            background-color: #13111c;
-            margin-left: 200px;
-            font-size: large;
-            text-transform: uppercase;
-            position: fixed;
-
-
-        }
-
-        .mostrar-menu,
-        .esconder-menu {
-
-
-            display: block;
-
-
-        }
-
-        #barra_de_navegacion {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: orange;
-            right: -100%;
-            top: 0;
-            text-align: center;
-            padding: 100px 0;
-            z-index: 100;
-            transition: 9s;
-        }
-
-        .esconder-menu {
-            position: absolute;
-            top: 40px;
-            right: 40px;
-        }
-
-
-        #tucheck:checked~#barra_de_navegacion {
-            right: 0;
-
-
-        }
-
-
-    }
-
-    @media(max-width:500px) {
-
-        .titulo {
-            display: flex;
-            color: #ffffff;
-            background-color: #13111c;
-            margin-left: 70px;
-            font-size: medium;
-            text-transform: uppercase;
-            position: fixed;
-
-
-        }
-
-        #container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-left: 50px;
-            width: 300px ;
-
-
-        }
-
-        .mostrar-menu {
-
-            display: flex;
-            margin-top: 10px;
-           margin-left: 20px;
-    
-    
-        }
-    
-        .menu {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background:#403e4d;
-            right: -100%;
-            top: 0;
-            text-align: center;
-            padding: 0px;
-            z-index: 100;
-            transition: 0.9s;
-            
-        }
-    
-       
-    
-        .esconder-menu {
-            display: flex;
-            position: absolute;
-            top: 40px;
-            right: 40px;
-            color: #ffffff;
-        }
-    
-        #tucheck:checked~.menu {
-            display: flex;
-    
-            right: 0;
-    
-    
-    
-        }
-    
-
-    }

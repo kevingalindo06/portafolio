@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #13111c;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1A1823;
+    width: 200px;
+    position: fixed;
+
+}
+
+nav ul {
+    margin-top: 70px;
+}
+
+
+
+
+
+
+.bar_nav {
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 60px;
+    transition: transform .8s;
+
+}
+
+.bar_nav:hover {
+
+    transform: scale(1.5);
+
+
+}
+
+.bar_nav a {
+    text-decoration: none;
+    color: #ffffff;
+
+
+
+}
+
+.bar_nav a:hover {
+    text-decoration: underline white;
+    color: #02cd9a;
+
+
+
+}
+
+
+
+.mostrar-menu,
+.esconder-menu {
+
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover .esconder-menu:hover {
+
+    color: #6cc091;
+
+
+}
+
+#tucheck {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-tarjetas{
+    display: flex;
+    width: 100vw ;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.row a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    border: 1px solid #fff;
+    margin-left: 80px;
+    margin-top: 40px;
+    box-shadow: 4px 4px 4px 1px black;
+    border-radius: 20px;
+    transition: transform .7s;
+    
+}
+
+.tarjeta:hover{
+    transform: scale(1.2);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 190px;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.tarjeta h3{
+    margin-top: 20px;
+}

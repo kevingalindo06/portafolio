@@ -62,12 +62,20 @@ function efectoHabilidades() {
 
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
+    if (distancia_skills >= 200) {
         document.getElementById("html").classList.add("barra-progreso1");
-        document.getElementById("js").classList.add("barra-progreso2");
-        document.getElementById("boostrap").classList.add("barra-progreso3");
-        document.getElementById("react").classList.add("barra-progreso4");
+        document.getElementById("css").classList.add("barra-progreso2");
+        document.getElementById("js").classList.add("barra-progreso3");
+        document.getElementById("boostrap").classList.add("barra-progreso4");
+        document.getElementById("react").classList.add("barra-progreso5");
     }
 
+  else{
+    document.getElementById("html").classList.remove("barra-progreso1");
+    document.getElementById("css").classList.remove("barra-progreso2");
+    document.getElementById("js").classList.remove("barra-progreso3");
+    document.getElementById("boostrap").classList.remove("barra-progreso4");
+    document.getElementById("react").classList.remove("barra-progreso5");
+  }
 }
 

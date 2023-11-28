@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #13111c;
+    
+}
+
+.titulo{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.contenedor{
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+form{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;    
+    color: #fff;
+    border: 1px solid #fff;
+    width: 480px;
+    border-radius: 30px;
+}
+
+form input[type="number"], input[type="email"], input[type="text"] {
+    background-color: #13111c;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 16px;
+}
+
+form textarea{
+    background-color: #13111c;
+    width: 400px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 16px;
+    padding-left: 10px;
+}
+
+form input[type="submit"]{
+    width: 200px;
+    height: 35px; 
+    background-color: #02cd9a;
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.regresar{
+    text-decoration: none;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #02cd9a;
+    margin-left: 20px;
+    border-radius:20px ;
+    position: absolute;
+    margin-top: 420px;
+    
+
+}
