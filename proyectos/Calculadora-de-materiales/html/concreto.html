@@ -7,20 +7,42 @@
     <title>Document</title>
 </head>
 <body>
+    <section id="datos">
+        <h2 class="titulo">CALCULADORA DE MATERIALES - CONCRETO</h2>
+
+        <div class="container">
+            <h3>calcula el concreto en metros cubicos </h3>
     
-    <h2 class="titulo">CALCULADORA DE MATERIALES - CONCRETO</h2>
+            <form action="">
+                <input type="number" placeholder="Largo" id="largo">
+                <input type="number" placeholder="Ancho" id="ancho">
+                <input type="number" placeholder="Profundidad o altura" id="alto" >
+                <p>Seleccione una dosificacion para su concreto <select name="" id="dosificacion" >
 
-    <div class="container">
-        <h3>calcula el concreto en metros cubicos </h3>
+                    <option value="1">seleccionar</option>
+                    <option value="2"> 1,2,2</option>
+                    <option value="3"> 1,2,3</option>
+                    <option value="4"> 1,2,4</option>
+                    <option value="4"> 1,3,3</option>
+                    <option value="4"> 1,3,4</option>
+                
+                </select> </p>
+                <input type="submit" value="Calcular" id="Calcular">
+            </form>
+        </div>
 
-        <form action="">
-            <input type="number" placeholder="Largo">
-            <input type="number" placeholder="Ancho">
-            <input type="number" placeholder="Profundidad o altura">
-            <input type="submit" value="Calcular">
-        </form>
-    </div>
+    </section>
+
+    <section id="resultados"> 
+        <p> tienes <strong><span id="verm3"></span> </strong> metros cubicos</p>
+        <p> Necesitas <strong><span id="cemento"></span> </strong> bultos de cemento</p>
+        <p> Necesitas <strong><span id="arena"></span> </strong> latas de arena</p>
+        <p> Necesitas <strong><span id="grava"></span> </strong> latas de grava o triturado</p>
+        <p> Necesitas <strong><span id="agua"></span> </strong> litros de agua</p>
+    </section>
+   
 <a href="menu.html" class="regresar">Regresar</a>
 
+<script src="../JS/concreto.js"></script>
 </body>
 </html>

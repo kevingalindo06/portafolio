@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/baldozas.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2 class="titulo" >Calculadora de materiales - baldozas</h2>
+    <h2 class="titulo">Calculadora de materiales - baldozas</h2>
+
+    <section id="datos">
+
+        <div class="contenedor">
 
 
-    <div class="contenedor">
+
+            <h3>Calcula calcula el numero de baldozas necesarias segun tus metros cuadrados</h3>
+
+
+
+            <input class="entradas" id="ancho" type="number" placeholder="Altura" title="Ingresa la altura de tu muro">
+            <input class="entradas" id="largo" type="number" placeholder="Ancho" title="Ingresa el ancho de tu muro">
+
+            <p>escoja la medida de su baldoza para calcular cuantas necesita <select name="" id="medidas" required>
+
+                <option value="1" selected >seleccionar</option>
+                <option value="2">baldoza de 20 x 20</option>
+                <option value="3">baldoza de 30 x 30</option>
+                <option value="4">baldoza de 40 x 40</option>
+                <option value="5">baldoza de 50 x 50</option>
+                <option value="6">baldoza de 20 x 40</option>
+        
+            </select></p> 
+
+            <input class="Calcular" id="calcular" type="submit" value="Calcular">
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <section id="resultados">
+        <p>Tienes <strong><span id="metrosM2"></span> </strong>metros cuadrados</p>
+
+        <p>Necesitas <strong><span id="metros"></span> </strong> kilogramos de pegante para baldozas</p>
+
+        <p>Necesitas <strong><span id="baldosas"></span> </strong> baldozas de <span id="verMedida"></span></p>
+
+     
 
         
+    </section>
 
-        <h3>Calcula calcula el numero de baldozas necesarias segun tus metros cuadrados</h3>
+    <a href="menu.html" class="regresar">Regresar</a>
 
-        <form action="">
-
-            <input class="entradas"  type="number" placeholder="Altura" title="Ingresa la altura de tu muro">
-            <input class="entradas"type="number" placeholder="Ancho" title="Ingresa el ancho de tu muro" >
-
-            <input class="Calcular"  type="submit" value="Calcular">
-
-            </form>
-
-        
-
-    </div>
-   
-    <a href="menu.html" class="regresar" >Regresar</a>
+    <script src="../JS/baldozas.js"></script>
 
 </body>
+
 </html>

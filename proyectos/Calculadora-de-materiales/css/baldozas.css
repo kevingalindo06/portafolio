@@ -37,6 +37,7 @@ body {
     height: 40px;
     background-color: #13111c;
     border: 1px solid white;
+    color:#fff ;
 }
 
 .Calcular{
@@ -56,4 +57,12 @@ body {
     margin-left: 20px;
     
 
+}
+#resultados{
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 60px;
 }
