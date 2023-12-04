@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 
 }
 
@@ -37,6 +37,7 @@ body {
     height: 40px;
     background-color: #13111c;
     border: 1px solid white;
+    color: #fff;
 }
 
 .Calcular{
@@ -56,4 +57,13 @@ body {
     margin-left: 20px;
     
 
+}
+
+#resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    
 }

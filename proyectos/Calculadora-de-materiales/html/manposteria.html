@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/manposteria.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <h2 class="titulo" >Calculadora de materiales - mamposteria</h2>
+    <h2 class="titulo">Calculadora de materiales - mamposteria</h2>
 
 
     <div class="contenedor">
 
-        
+
 
         <h3>Calcula tu mamposteria exacta</h3>
 
-        <form action="">
+        <section id="datos">
 
-            <input class="entradas"  type="number" placeholder="Altura" title="Ingresa la altura de tu muro">
-            <input class="entradas"type="number" placeholder="Ancho" title="Ingresa el ancho de tu muro" >
+            <form action="">
 
-            <input class="Calcular"  type="submit" value="Calcular">
+                <input class="entradas" id="altura" type="number" placeholder="Altura"
+                    title="Ingresa la altura de tu muro">
+                <input class="entradas" id="ancho" type="number" placeholder="Ancho"
+                    title="Ingresa el ancho de tu muro">
+                
+                    <p> Seleccione una dosificacion para su mortero <select name="" id="dosificacion" >
+
+                        <option value="1">seleccionar</option>
+                        <option value="2"> 1,2</option>
+                        <option value="3"> 1,3</option>
+                        <option value="4"> 1,4</option>
+                        <option value="4"> 1,5</option>
+                        <option value="4"> 1,6</option>
+                        <option value="4"> 1,7</option>
+                    
+                    </select> </p>
+
+                   
+
+                <input class="Calcular" type="submit" id="calcular" value="Calcular">
 
             </form>
 
-        
+
 
     </div>
-   
-    <a href="menu.html" class="regresar" >Regresar</a>
+
+    </section>
+
+    <section id="resultados">
+        
+        <p>Tienes <strong><span id="metrosM2"></span> </strong>metros cuadrados</p>
+
+        <p>Necesitas <strong><span id="ladrillos"></span> </strong>  ladrillos <span id="tipoLadrillos"></span> </p>
+
+        <p>Necesitas <strong><span id="cemento"></span> </strong> bultos de cemento </p>
+
+        <p>Necesitas <strong><span id="arena"></span> </strong> latas de arena </p>
+
+        <p>Necesitas <strong><span id="agua"></span> </strong> litros de agua </p>
+
+    </section>
+
+    <a href="menu.html" class="regresar">Regresar</a>
+
+    <script src="../JS/manposteria.js"></script>
 
 </body>
+
 </html>
